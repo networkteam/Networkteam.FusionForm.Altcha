@@ -6,9 +6,9 @@
         "MIT"
     ],
     "require": {
-        "neos/neos": "~8.3",
-        "neos/fusion-form": "~2.3",
-        "networkteam/flow-altcha": "~0.1"
+        "neos/neos": "~8.3 || ~9.0",
+        "neos/fusion-form": "~2.3 || ~3.0",
+        "networkteam/flow-altcha": "~0.1 || ~0.2"
     },
     "autoload": {
         "psr-4": {
