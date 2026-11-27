@@ -1,9 +1,9 @@
 prototype(Networkteam.FusionForm.Altcha:PaperTiger.Field.Captcha) < prototype(Neos.Neos:ContentComponent) {
-    name = ${q(node).property('_identifier')}
+    name = ${node.aggregateId.value}
 
     renderer = Neos.Fusion:Case {
         backend {
-            condition = ${node.context.inBackend}
+            condition = ${renderingMode.isEdit}
             renderer = afx`
                 <Sitegeist.PaperTiger:FieldContainer
                     field.name={props.name}
